@@ -1,1 +1,1 @@
-include ':app', ':room', ':mvvm'
+include ':room', ':mvvm'
