@@ -1,4 +1,4 @@
-package cn.mayun.jetpack
+package com.ljh.app
 
 import org.junit.Test
 

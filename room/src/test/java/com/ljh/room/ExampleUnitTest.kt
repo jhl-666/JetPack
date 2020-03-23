@@ -1,5 +1,8 @@
 package com.ljh.room
 
+import com.ljh.room.db.AppDataBase
+import com.ljh.room.db.dao.StudentDao
+import com.ljh.room.db.table.Student
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -12,6 +15,6 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        //assertEquals(4, 2 + 2)
     }
 }
