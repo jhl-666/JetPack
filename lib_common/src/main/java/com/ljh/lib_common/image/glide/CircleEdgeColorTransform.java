@@ -1,4 +1,4 @@
-package com.ljh.lib_common.image;
+package com.ljh.lib_common.image.glide;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -16,20 +16,17 @@ import java.security.MessageDigest;
 
 /**
  * Created by ljh on 2017/7/26.
+ * 圆形带边框
  */
 
-public class GlideCircleEdgeColorTransform extends BitmapTransformation {
+public class CircleEdgeColorTransform extends BitmapTransformation {
     private static final String ID = "GlideCircleEdgeColorTransform";
     private static final byte[] ID_BYTES = ID.getBytes(CHARSET);
 
     private Paint mBorderPaint;
     private float mBorderWidth;
 
-    public GlideCircleEdgeColorTransform(Context context) {
-        super();
-    }
-
-    public GlideCircleEdgeColorTransform(Context context, int borderWidth, int borderColor) {
+    public CircleEdgeColorTransform(int borderWidth, int borderColor) {
         super();
         mBorderWidth = Resources.getSystem().getDisplayMetrics().density * borderWidth;
 
@@ -74,7 +71,7 @@ public class GlideCircleEdgeColorTransform extends BitmapTransformation {
 
     @Override
     public boolean equals(Object o) {
-        return o instanceof GlideCircleEdgeColorTransform;
+        return o instanceof CircleEdgeColorTransform;
     }
 
     @Override
